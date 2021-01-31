@@ -17,6 +17,16 @@ def km_ml(x):
     x *= 0.621371
     return x
 print (km_ml(float(input('input km: '))))
+#
+def lb_kg(f):
+    f *= 0.453592
+    return f
+print(lb_kg(float(input('input lb: '))))
+
+def kg_lb(t):
+    t *= 2.20462
+    return t
+print(kg_lb(float(input('input kg: '))))
 
 
 
