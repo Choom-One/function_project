@@ -38,6 +38,16 @@ def gr_oz(u):
     return u
 print(gr_oz(float(input('input gr: '))))
 
+def gal_l(i):
+    i *= 3.78541
+    return i
+print(gal_l(float(input('input gal: '))))
+
+def l_gal(o):
+    o *= 0.264172
+    return o
+print(l_gal(float(input('input l: '))))
+
 
 
 
