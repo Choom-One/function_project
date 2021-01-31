@@ -28,5 +28,17 @@ def kg_lb(t):
     return t
 print(kg_lb(float(input('input kg: '))))
 
+def oz_gr(y):
+    y *= 0.035274
+    return y
+print(oz_gr(float(input('input oz: '))))
+
+def gr_oz(u):
+    u *= 28.3495
+    return u
+print(gr_oz(float(input('input gr: '))))
+
+
+
 
 
