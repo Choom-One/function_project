@@ -61,9 +61,40 @@ from random import randint
 #
 # hello(name='Artiom')
 
-name2 = ['qwer', 'lea', 'amir']#список наших имен
+# name2 = ['qwer', 'lea', 'amir']#список наших имен
+#
+# hello_name = lambda name: [f'Hello {i}' for i in name]#передаём фенкции аргемент name, потом проходимся циклом по списку записывая все в сторку где i- это имя,
+# #а сам цик мы оборацуиваем в список
+#
+# print(hello_name(name2))
+# numb_list = [1, 3, 5, 7]
+# numb_list = set(numb_list)
+# numb_list_2 = [1, 3, 5]
+# result = map(lambda x: x**2, numb_list)
+#
+# print(list(result))
 
-hello_name = lambda name: [f'Hello {i}' for i in name]#передаём фенкции аргемент name, потом проходимся циклом по списку записывая все в сторку где i- это имя,
-#а сам цик мы оборацуиваем в список
+# n_list = [1, 3, 4, 4, 6, 2, 7, 8]
+#
+# result = map(lambda i: str(i), n_list)
+#
+# print(list(result))
+#
+# result = filter(lambda i: i % 2 == 0, n_list)
+# print(list(result))
 
-print(hello_name(name2))
+# name_list = ['kolya', 'Kirill', 'vova', 'sasha']
+#
+# result = filter(lambda i: 'k' in i.lower(), name_list)
+# print(list(result))
+
+from functools import reduce
+
+items = [1, 2, 3, 4, 5, 6, 9]
+# sun_all = reduce(lambda x, y: x + y, items)
+#
+# print(sun_all)
+
+sum = reduce(lambda x, y : x * y, list(filter(lambda x: x % 3 == 0, items)))
+
+print(sum)
